@@ -7,32 +7,39 @@
         mc:Ignorable="d"
         Title="Reg" Height="550" Width="800" WindowStartupLocation="CenterScreen" Background="SeaGreen" Closing="Window_Closing">
     <StackPanel HorizontalAlignment="Center">
-        <StackPanel Height="30"></StackPanel>
+        <StackPanel Height="75"></StackPanel>
         <StackPanel Orientation="Horizontal">
             <Image Source="Image\1.png" Width="50"></Image>
             <TextBox Width="500" Height="50" Name="Login" FontSize="25"></TextBox>
         </StackPanel>
-        <StackPanel Height="15"></StackPanel>
+        <StackPanel Height="15">
+            <TextBlock Width="500" TextAlignment="Center"  Name="Errorlog"/>
+        </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Image Source="Image\4.png" Width="50"></Image>
             <TextBox Width="500" Height="50" FontSize="25" Name="Email"></TextBox>
         </StackPanel>
-        <StackPanel Height="15"></StackPanel>
+        <StackPanel Height="15">
+            <TextBlock Width="500" TextAlignment="Center"  Name="Erroremail"/>
+        </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Image Source="Image\2.png" Width="50"></Image>
             <TextBox Width="500" Height="50" Name="Password" FontSize="25"></TextBox>
         </StackPanel>
-        <StackPanel Height="15"></StackPanel>
+        <StackPanel Height="15">
+            <TextBlock Width="500" TextAlignment="Center"  Name="Errorpass"/>
+        </StackPanel>
         <StackPanel Orientation="Horizontal">
             <TextBlock Width="50" Height="50"></TextBlock>
             <TextBox Width="500" Height="50" Name="Password1" FontSize="25"></TextBox>
         </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel>
-            <TextBlock Width="500" Height="50" Text="Уже зарегистрированы?" TextAlignment="Center" TextWrapping="Wrap" FontSize="25"></TextBlock>
-
+        <StackPanel Height="15">
+            <TextBlock Width="500" TextAlignment="Center"  Name="Errorpass1"/>
         </StackPanel>
-        <StackPanel Height="15"></StackPanel>
+
+        <StackPanel Height="15">
+            <TextBlock Width="500" TextAlignment="Center"  Name="Succsefull"/>
+        </StackPanel>
         <StackPanel>
             <Button Content="Войти" FontSize="25" Height="50" Width="250" BorderBrush="SeaGreen" Background="{x:Null}" Click="Button_Click" ></Button>
         </StackPanel>

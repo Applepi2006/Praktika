@@ -2891,11 +2891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\Desktop\\WPF_PR\\WPF_PR.csproj",
+      "projectUniqueName": "C:\\Users\\student\\Desktop\\Praktika\\WPF_PR.csproj",
       "projectName": "WPF_PR",
-      "projectPath": "C:\\Users\\student\\Desktop\\WPF_PR\\WPF_PR.csproj",
+      "projectPath": "C:\\Users\\student\\Desktop\\Praktika\\WPF_PR.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\Desktop\\WPF_PR\\obj\\",
+      "outputPath": "C:\\Users\\student\\Desktop\\Praktika\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2962,7 +2962,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

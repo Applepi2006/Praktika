@@ -33,14 +33,14 @@ namespace WPF_PR
             var password = Password.Text;
             var context = new AppDbContext();
             
-            var user = context.Users.SingleOrDefault(x => x.Login == login && x.Password == password);
+            var user = context.Users.SingleOrDefault(x => x.Login == login || x.Email == login && x.Password == password);
             if (user is null) 
             {
-                MessageBox.Show("Неправильный Логин или Пароль!");
+                Error.Text = ("Неправильный Логин или Пароль!");
                 return;
             }
 
-            MessageBox.Show("Вы успешно вошли в аккаунт!");
+            Error.Text = ("Вы успешно вошли в аккаунт!");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -48,6 +48,17 @@ namespace WPF_PR
             this.Hide();
             Reg reg = new Reg();
             reg.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string Password_Copy = Password.Text;
+            Password.Text = "";
+
+            for (int i = Password.Text.Length; i > 0; i--)
+            {
+                Password.Text += '*';
+            }
         }
     }
 }
