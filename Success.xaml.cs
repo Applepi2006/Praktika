@@ -41,6 +41,7 @@ namespace WPF_PR
             this.Hide();
             Kabinet kabinet = new Kabinet();
             kabinet.Show();
+            kabinet.Imya.Text = Imya1.Text;
         }
     }
 }

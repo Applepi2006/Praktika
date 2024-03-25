@@ -27,8 +27,10 @@ namespace WPF_PR
             Environment.Exit(0);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        int schet1 = 0;
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+
             var login = Login.Text;
 
             var password = Password.Password;
@@ -39,6 +41,19 @@ namespace WPF_PR
             if (user is null) 
             {
                 Errorpass.Text = ("Неправильный Логин или Пароль!");
+                schet1++;
+                if (schet1 == 3)
+                {
+                    Login.IsEnabled = false;
+                    Password.IsEnabled = false;
+                    Password_Tb.IsEnabled = false;
+                    MessageBox.Show("Вход заблокирован на 15 секунд!");
+                    await Task.Delay(15000);
+                    Login.IsEnabled = true;
+                    Password.IsEnabled = true;
+                    Password_Tb.IsEnabled = true;
+                    schet1 = 0;
+                }
                 return;
             }
 
@@ -47,8 +62,7 @@ namespace WPF_PR
             Success success = new Success();
             success.Show();
             success.Hello.Text = "Здравствуйте," + login + "!";
-            Kabinet kabinet = new Kabinet();
-            kabinet.Imya.Text = login;
+            success.Imya1.Text = login;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

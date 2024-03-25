@@ -32,6 +32,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Name="Imya1" Visibility="Collapsed"></TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="7" TextAlignment="Center"  Name="Hello" FontSize="25"></TextBlock>
         <Button Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="4" Content="Личный Кабинет" FontSize="25" Click="Button_Click_1"></Button>
         <Button Grid.Row="8" Grid.Column="6" Grid.ColumnSpan="3" Content="Выйти" FontSize="25" BorderBrush="LightSlateGray" Background="{x:Null}" Click="Button_Click"></Button>

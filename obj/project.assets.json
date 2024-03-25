@@ -2885,19 +2885,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {}
+    "C:\\Users\\yaros\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\Desktop\\Praktika\\Praktika\\WPF_PR.csproj",
+      "projectUniqueName": "D:\\OneDrive\\Рабочий стол\\Praktika\\WPF_PR.csproj",
       "projectName": "WPF_PR",
-      "projectPath": "C:\\Users\\student\\Desktop\\Praktika\\Praktika\\WPF_PR.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\Desktop\\Praktika\\Praktika\\obj\\",
+      "projectPath": "D:\\OneDrive\\Рабочий стол\\Praktika\\WPF_PR.csproj",
+      "packagesPath": "C:\\Users\\yaros\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive\\Рабочий стол\\Praktika\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yaros\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2917,11 +2917,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2962,7 +2957,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

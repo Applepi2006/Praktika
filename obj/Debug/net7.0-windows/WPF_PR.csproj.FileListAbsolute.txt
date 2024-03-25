@@ -263,3 +263,6 @@ C:\Users\student\Desktop\Praktika\Praktika\obj\Debug\net7.0-windows\ref\WPF_PR.d
 C:\Users\student\Desktop\Praktika\Praktika\obj\Debug\net7.0-windows\App.baml
 C:\Users\student\Desktop\Praktika\Praktika\obj\Debug\net7.0-windows\Kabinet.g.cs
 C:\Users\student\Desktop\Praktika\Praktika\obj\Debug\net7.0-windows\Kabinet.baml
+D:\OneDrive\Рабочий стол\Praktika\obj\Debug\net7.0-windows\Kabinet.g.cs
+D:\OneDrive\Рабочий стол\Praktika\obj\Debug\net7.0-windows\App.baml
+D:\OneDrive\Рабочий стол\Praktika\obj\Debug\net7.0-windows\Kabinet.baml

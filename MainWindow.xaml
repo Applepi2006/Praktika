@@ -33,7 +33,7 @@
         </Grid.ColumnDefinitions>
         <Image Grid.Row="1" Grid.Column="1" Source="Image\1.png"></Image>
         <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="7" Name="Login" FontSize="25" Tag="Имя пользователя" Style="{StaticResource placeHolder}"></TextBox>
-        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="7" TextAlignment="Center"  Name="Errorlog"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="7" TextAlignment="Center"></TextBlock>
         <Image Grid.Row="3" Grid.Column="1" Source="Image\2.png"></Image>
         <PasswordBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="7" Name="Password" PasswordChar="*" FontSize="25" Visibility="Collapsed" Tag="Пароль"></PasswordBox>
         <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="7" Name="Password_Tb" FontSize="25" Visibility="Visible" Tag="Пароль" Style="{StaticResource placeHolder}"></TextBox>

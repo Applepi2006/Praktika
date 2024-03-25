@@ -6,31 +6,44 @@
         xmlns:local="clr-namespace:WPF_PR"
         mc:Ignorable="d"
         Title="Kabinet" Height="550" Width="800" WindowStartupLocation="CenterScreen" Background="LightSlateGray" Closing="Window_Closing">
-    <StackPanel HorizontalAlignment="Center">
-        <StackPanel Height="75"></StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Image\1.png" Width="50"></Image>
-            <TextBox Width="500" Height="50" Name="Login" FontSize="25" Tag="Логин" Style="{StaticResource placeHolder}"></TextBox>
-        </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Image\4.png" Width="50"></Image>
-            <TextBox Width="500" Height="50" FontSize="25" Name="Email" Tag="Почта" Style="{StaticResource placeHolder}"></TextBox>
-        </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Image\2.png" Width="50"></Image>
-            <TextBox Width="500" Height="50" Name="Password" FontSize="25" Tag="Пароль" Style="{StaticResource placeHolder}"></TextBox>
-        </StackPanel>
-        <StackPanel Height="85">
-            <TextBlock Name="Imya"></TextBlock>
-        </StackPanel>
-        <StackPanel>
-            <Button Content="Вернуться" FontSize="25" Height="50" Width="250" BorderBrush="LightSlateGray" Background="{x:Null}" Click="Button_Click_1" ></Button>
-        </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel>
-            <Button x:Name="RegBtn" Content="Сохранить изменения" FontSize="25" Height="50" Width="260" Click="Button_Click"></Button>
-        </StackPanel>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Name="Imya" Visibility="Collapsed"></TextBlock>
+        <Image Grid.Row="1" Grid.Column="1" Source="Image\1.png"></Image>
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="7" Name="Login" FontSize="25" Tag="Логин" Style="{StaticResource placeHolder}"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="7" Name="Errorlogin" TextAlignment="Center"></TextBlock>
+        <Image Grid.Row="3" Grid.Column="1" Source="Image\4.png"></Image>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="7" FontSize="25" Name="Email" Tag="Почта" Style="{StaticResource placeHolder}"></TextBox>
+        <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="7" Name="Erroremail" TextAlignment="Center"></TextBlock>
+        <Image Grid.Row="5" Grid.Column="1" Source="Image\2.png"></Image>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="7" Name="Password" FontSize="25" Tag="Пароль" Style="{StaticResource placeHolder}"></TextBox>
+        <TextBlock Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="7" Name="Errorpass" TextAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="7" Name="Vivod" FontSize="25" TextAlignment="Center"></TextBlock>
+        <Button Grid.Row="8" Grid.Column="6" Grid.ColumnSpan="3" Content="Вернуться" FontSize="25" BorderBrush="LightSlateGray" Background="{x:Null}" Click="Button_Click_1" ></Button>
+        <Button Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="4" Content="Сохранить изменения" FontSize="25" Click="Button_Click"></Button>
+    </Grid>
 </Window>
