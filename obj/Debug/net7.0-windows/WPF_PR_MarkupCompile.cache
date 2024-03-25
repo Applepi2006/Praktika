@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\student\Desktop\Praktika\obj\Debug\net7.0-windows\
+C:\Users\student\Desktop\Praktika\Praktika\obj\Debug\net7.0-windows\
 WPF_PR
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\student\Desktop\Praktika\App.xaml
-2-1959127177
+C:\Users\student\Desktop\Praktika\Praktika\App.xaml
+4-1270228583
 
-10-1937371493
-226600550065
-MainWindow.xaml;Reg.xaml;
+12-1920751992
+226-1225666870
+Kabinet.xaml;MainWindow.xaml;Reg.xaml;Success.xaml;
 
 False
 

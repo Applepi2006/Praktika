@@ -7,15 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Kabinet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Reg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Success.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Kabinet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Reg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Success.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -5,36 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_PR"
         mc:Ignorable="d"
-        Title="Log" Height="550" Width="800" WindowStartupLocation="CenterScreen" Background="SeaGreen" Closing="Window_Closing">
-    <StackPanel HorizontalAlignment="Center">
-        <StackPanel Height="100"></StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Image\1.png" Width="50"></Image>
-            <TextBox Width="500" Height="50" Name="Login" FontSize="25"></TextBox>
-        </StackPanel>
-        <StackPanel Height="15">
-            <TextBlock Width="500" TextAlignment="Center"  Name="Errorlog"></TextBlock>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Image\2.png" Width="50"></Image>
-            <TextBox Width="500" Height="50" Name="Password" FontSize="25"></TextBox>
-            <Button Width="50" BorderBrush="SeaGreen" Background="{x:Null}" Click="Button_Click_2">
-                <Image Source="Image\3.png" Width="47" Height="46"></Image>
-            </Button>
-        </StackPanel>
-        <StackPanel Height="15">
-            <TextBlock Width="500" TextAlignment="Center"  Name="Errorpass"></TextBlock>
-        </StackPanel>
-        <StackPanel>
-            <TextBlock Width="500" Height="50" Name="Error" TextAlignment="Center" TextWrapping="Wrap" FontSize="25"></TextBlock>
-        </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel>
-            <Button Content="Зарегестрироваться" FontSize="25" Height="50" Width="250" BorderBrush="SeaGreen" Background="{x:Null}" Click="Button_Click_1" ></Button>
-        </StackPanel>
-        <StackPanel Height="15"></StackPanel>
-        <StackPanel>
-            <Button Content="Войти" FontSize="25" Height="50" Width="250" Click="Button_Click"></Button>
-        </StackPanel>
-    </StackPanel>
+        Title="Log" Height="550" Width="800" WindowStartupLocation="CenterScreen" Background="LightSlateGray" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Source="Image\1.png"></Image>
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="7" Name="Login" FontSize="25" Tag="Имя пользователя" Style="{StaticResource placeHolder}"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="7" TextAlignment="Center"  Name="Errorlog"></TextBlock>
+        <Image Grid.Row="3" Grid.Column="1" Source="Image\2.png"></Image>
+        <PasswordBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="7" Name="Password" PasswordChar="*" FontSize="25" Visibility="Collapsed" Tag="Пароль"></PasswordBox>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="7" Name="Password_Tb" FontSize="25" Visibility="Visible" Tag="Пароль" Style="{StaticResource placeHolder}"></TextBox>
+        <Button Grid.Row="3" Grid.Column="9" Click="Button_Click_2">
+            <Image Grid.Row="3" Grid.Column="9" Source="Image/5.png" Name="Image"></Image>
+        </Button>
+        <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="7" TextAlignment="Center"  Name="Errorpass"></TextBlock>
+        <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3" Content="Войти" FontSize="25" Click="Button_Click"></Button>
+        <Button Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="5" Content="Зарегестрироваться" FontSize="25" BorderBrush="LightSlateGray" Background="{x:Null}" Click="Button_Click_1"></Button>
+    </Grid>
 </Window>
